@@ -1,0 +1,121 @@
+.modal-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal {
+    background-color: #fff;
+    overflow: visible;
+    padding: 0;
+    width: 432px;
+    box-shadow: var(--box-shadow);
+    z-index: 1;
+
+    .modal-header {
+      padding: 10px 16px;
+
+      .modal-title {
+        display: flex;
+        justify-content: space-between;
+        color: #1c1e21;
+        font-size: 16px;
+        line-height: 38px;
+
+        .close-button {
+          cursor: pointer;
+        }
+      }
+
+      .modal-desc {
+        color: #606770;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 500;
+      }
+    }
+
+    .divider {
+      border-bottom: 1px solid #dadde1;
+    }
+
+    .modal-body {
+      form.new-accoutn-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px;
+
+        .name-field {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 12px;
+
+          input {
+            width: 100%;
+          }
+        }
+        input {
+          padding: 11px;
+          font-size: 15px;
+          line-height: 16px;
+          background: #f5f6f7;
+          border: 1px solid #ccd0d5;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: #606770;
+          }
+        }
+
+        .sing-up-button {
+          background-color: #00a400;
+          border: none;
+          border-radius: 6px;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 600;
+          height: 36px;
+          overflow: hidden;
+          padding: 0 52px;
+          margin: auto;
+          cursor: pointer;
+
+          &:hover {
+            background: linear-gradient(#79bc64, #578843);
+          }
+        }
+
+        .upload-contact-desc {
+          color: #777;
+          font-size: 11px;
+
+          a {
+            color: var(--primary-color);
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .terms-condition {
+          color: #777;
+          font-size: 11px;
+
+          a {
+            color: var(--primary-color);
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #1877f2;
+  --secondary-color: #42b72a;
+  --secondary-hover-color: #36a420;
+  --primary-bg-color: #f0f2f5;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  --primary-border: 1px solid #ccd0d5;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+input::focus {
+  outline: none;
+}
